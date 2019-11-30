@@ -27,18 +27,18 @@ import Components from 'views/Components/Components.jsx';
 import LandingPage from 'views/LandingPage/LandingPage.jsx';
 import ProfilePage from 'views/ProfilePage/ProfilePage.jsx';
 import LoginPage from 'views/LoginPage/LoginPage.jsx';
-import Adventure from 'views/Adventure/Adventure.jsx';
+import Video from 'views/Video/Video.jsx';
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/adventure" component={Adventure} />
-      <Route path="/landing-page" component={LandingPage} />
+      <Route path="/video" component={Video} />
+      <Route path="/components" component={Components} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Components} />
+      <Route path="/" component={Video} />
     </Switch>
   </Router>,
   document.getElementById('root')

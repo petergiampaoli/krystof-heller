@@ -37,9 +37,9 @@ import Parallax from 'components/Parallax/Parallax.jsx';
 import landingPageStyle from 'assets/jss/material-kit-react/views/landingPage.jsx';
 
 // Sections for this page
-import ProductSection from './Sections/ProductSection.jsx.js';
-import TeamSection from './Sections/TeamSection.jsx.js';
-import WorkSection from './Sections/WorkSection.jsx.js';
+import ProductSection from './Sections/ProductSection.jsx';
+import TeamSection from './Sections/TeamSection.jsx';
+import WorkSection from './Sections/WorkSection.jsx';
 
 const dashboardRoutes = [];
 
@@ -51,7 +51,7 @@ class Adventure extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="Krystof Video Site Title"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -64,7 +64,7 @@ class Adventure extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Your Story Starts With Us.</h1>
+                <h1 className={classes.title}>Your Story Starts With Ktof.</h1>
                 <h4>
                   Every landing page needs a small description after the big
                   bold title, that{"'"}s why we added this text here. Add here
@@ -80,7 +80,7 @@ class Adventure extends React.Component {
                   rel="noopener noreferrer"
                 >
                   <i className="fas fa-play" />
-                  Watch video
+                  Watch My Videos
                 </Button>
               </GridItem>
             </GridContainer>
